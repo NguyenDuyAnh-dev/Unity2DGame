@@ -93,6 +93,13 @@ public class Enemy : MonoBehaviour
         }
         Destroy(gameObject);
         GameManager.Instance.AddScore(scoreValue);
+        // Lưu điểm mới vào PlayerPrefs để GameOverScene đọc được
+        PlayerPrefs.SetInt("PlayerScore", GameManager.Instance.GetScore());
+        // Lưu điểm mới vào PlayerPrefs, kể cả điểm = 0
+        int currentScore = GameManager.Instance.GetScore();
+        PlayerPrefs.SetInt("PlayerScore", currentScore);
+        PlayerPrefs.Save();
+        Debug.Log("Score saved: " + PlayerPrefs.GetInt("PlayerScore"));  // Kiểm tra debug
     }
 
     // Bỏ hết các OnTriggerEnter2D hoặc OnTriggerStay2D liên quan đến laser gây sát thương nhé

@@ -21,7 +21,7 @@ public class MainMenuController : MonoBehaviour
     }
     public void InfoButton()
     {
-        mainPanel.SetActive(false );
+        mainPanel.SetActive(false);
         infoPanel.SetActive(true);
     }
     public void BackBtton()

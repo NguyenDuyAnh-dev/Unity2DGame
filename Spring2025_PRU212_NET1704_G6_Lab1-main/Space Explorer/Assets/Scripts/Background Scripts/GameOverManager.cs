@@ -10,10 +10,16 @@ public class GameOverManager : MonoBehaviour
     public Button exitButton;
     void Start()
     {
-        // Hiển thị điểm số cuối cùng
-        scoreText.text = "Final " + PlayerPrefs.GetString("PlayerScore", "0");
+        //// Hiển thị điểm số cuối cùng
+        //scoreText.text = "Final " + PlayerPrefs.GetString("PlayerScore", "0");
 
-        // Xử lý nút Play Again
+        //// Xử lý nút Play Again
+        //playAgainButton.onClick.AddListener(() => PlayAgain());
+        //exitButton.onClick.AddListener(QuitGame);
+
+        int finalScore = PlayerPrefs.GetInt("PlayerScore", 0);
+        scoreText.text = "Final score:" + finalScore.ToString();
+
         playAgainButton.onClick.AddListener(() => PlayAgain());
         exitButton.onClick.AddListener(QuitGame);
     }

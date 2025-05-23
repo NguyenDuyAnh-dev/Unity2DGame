@@ -34,6 +34,12 @@ public class GameManager : MonoBehaviour
         UpdateUI();
     }
 
+    public int GetScore()
+    {
+        return score;
+    }
+
+
     private void IncreaseLevel()
     {
         level++;
