@@ -1,0 +1,81 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Logs, Temp & Auto-generated files
+Logs/
+Temp/
+Library/
+UserSettings/
+MemoryCaptures/
+Build/
+Builds/
+ExportedObj/
+obj/
+*.bak
+
+# Ignore Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore JetBrains Rider files
+.idea/
+
+# Ignore crash reports
+CrashReports/
+
+# Ignore compiled files
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.ilk
+*.aps
+*.ncb
+*.opendb
+*.VC.db
+*.obj
+*.exp
+*.exe
+*.dll
+*.log
+
+# Ignore Unity's auto-generated Lightmaps and Lighting Data
+Assets/**/Lightmap-*
+Assets/**/ReflectionProbe-*
+
+# Ignore local test builds
+[Bb]uilds/
+[Bb]uild/
+
+# Ignore Playmode and Editor Mode Cache
+Assets/Scenes/Autosave_*.unity
+
+# Ignore Addressable build cache
+Assets/AddressableAssetsData/*/*.bin*
+Assets/StreamingAssets/aa/*
+
+# Ignore TextMeshPro auto-generated assets
+Assets/TextMesh Pro/*.asset
+
+# Ignore Shader Cache
+Library/ShaderCache/
+
+# Ignore Animation and Timeline caches
+Library/Timeline/
+
+# Ignore any files you don't want to track manually
+
+Space Explorer/.vs/Space Explorer/v17/DocumentLayout.json
+/Space Explorer/obj
+/Space Explorer/obj
+/Space Explorer/UserSettings
+*.dwlt
